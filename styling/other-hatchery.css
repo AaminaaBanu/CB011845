@@ -1,0 +1,131 @@
+
+
+.section1{
+    display: flex;
+   
+}
+.image-box{
+margin: 50px;
+height: 50%;
+width: 100%;
+overflow: hidden;
+box-shadow: 10px 10px 50px black;
+border-radius: 10px;
+
+}
+.text-overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color:  rgba(215, 217, 219, 0.534);
+    bottom: 30px;
+    text-align: center;
+
+    
+    
+
+}
+.image-box1{
+    margin: 50px;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 10px;
+    
+    
+    }
+.text-overlay1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    box-sizing:border-box;
+    background-color: rgba(215, 217, 219, 0.534);
+    bottom: 30px;
+    text-align: center;
+    
+   
+    
+}
+.image-box:hover{
+    cursor: pointer;
+    transform:scale(1.1) rotate(0.1deg);
+}
+
+.para{
+    visibility:  visible;
+    opacity: 1;
+    line-height: 30px;
+}
+.para1{
+    visibility: visible;
+    opacity: 1;
+   line-height: 30px;
+
+}
+.image-box:hover .text-overlay .text-overlay1{
+    height: 200px;
+    bottom: 200px;
+    background-color: black;
+
+}
+.image-box1:hover{
+    cursor: pointer;
+    transform:scale(1.1) rotate(0.1deg);
+}
+.image-box1:hover .text-overlay .text-overlay1{
+    height: 300px;
+    bottom: 300px;
+    background-color: black;
+}
+.image-box :hover .para{
+visibility: visible;
+opacity: 1;
+
+}
+
+.image-box1:hover .para1{
+    visibility: visible;
+    opacity: 1;
+    }
+.section1 h2{
+    text-align: center;
+    visibility: visible;
+   
+}
+.list ul{
+    list-style: disc;
+   padding: 10px;
+    padding-left: 30%;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 15%;
+}
+.list h2{
+    text-align: center;
+    color: rgb(76, 0, 139);
+}
+
+.other-hatch p{
+
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom:0.5em ;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+}
+.other-hatch h1{
+    text-align: center;
+    color: rgb(76, 0, 139); ;
+}
+.video{
+margin-left: 30%;
+}
+    

@@ -1,0 +1,161 @@
+.bgvideo{
+    position: relative;
+}
+section .bgvideo {
+    width: 100%;
+    height: fit-content;
+
+}
+
+.map-kos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 25%;
+    overflow: hidden;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 10px; 
+}
+
+
+.kosgoda h1{
+    
+    text-align: center;
+    font-size: 70px;
+    position: relative;
+    color: grey;
+}
+.kosgoda h1::before{
+    margin-left: 14.7%;
+    display: flex;
+    min-height: 100vh;
+    content: attr(data-text);
+    position: absolute;
+    width: 800px;
+    color: rgb(116, 107, 29);
+    overflow: hidden;
+    white-space:nowrap;
+    animation: animate 5s linear infinite;
+    filter: drop-shadow( 0 0 30px  rgb(116, 107, 29)) drop-shadow( 0 0 50px  rgb(116, 107, 29));
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+       width: 0; 
+    }
+    70%,90%
+    {
+     width:100%;   
+    }
+}
+.box-it{
+   line-height: 30px;
+   padding: 2em;
+   box-sizing: border-box ;
+   background-color: rgba(189, 228, 184, 0.486);
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 0%;
+   margin-bottom: 5%;
+   border-radius: 10px;
+   
+   
+}
+.box-it h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+
+}
+.box-it ul{
+list-style: circle;
+margin-left: 10%;
+text-align:left;
+}
+
+.li1{
+   
+    transform:scale(1.2);
+    transition: transform 10s;
+    margin-left: 10%;
+   
+
+}
+.li2{
+   
+    transform:scale(1.2);
+    transition: transform 11s;
+    margin-left: 10%;
+
+}
+.li3{
+   
+    transform:scale(1.2);
+    transition: transform 12s;
+    margin-left: 10%;
+
+}
+.li4{
+   
+    transform:scale(1.2);
+    transition: transform 13s;
+    margin-left: 10%;
+
+}
+.li5{
+   
+    transform:scale(1.2);
+    transition: transform 14s;
+    margin-left: 10%;
+
+}
+.list-it{
+    display: flex;
+}
+.card1{
+   position: relative;
+    margin: 50px;
+    height: 80%;
+    width: 20%;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgb(25, 9, 94);
+    border-radius: 10px;
+    
+    }
+    .card1 :hover{
+        cursor: pointer;
+        transform:scale(1.1) rotate(0.1deg);
+    }
+   
+   
+
+                     .list-it figcaption{
+                        text-align: center;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        font-size: 25px;
+                        
+                    }
+                    .t2d h2{
+                        text-align: center;
+                        font-size: 40px;
+                        text-shadow:0px 10px 10px  rgb(100, 98, 98);  
+                        transform:scale(1.8);
+                        transition: transform 20s;
+                         }
+                         .location{
+                            display: flex;
+                            border-radius: 10px;
+                            border: solid black;
+                            padding-left: 10px ;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            margin-bottom: 5%;
+                            margin-left: 30%;
+                            margin-right: 30%;
+                            line-height: 30px;
+                            font-size: 20px;
+                         }

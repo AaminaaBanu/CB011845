@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>tickets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="description" content="This should describe what the web site is about and contain words people usually search on">
+    <link rel="stylesheet" href="styling/tickets.css">
+    <link rel="stylesheet" href="styling/first.css">
+    <link rel="stylesheet" href="styling/mobile.css">
+
+   
+  
+</head>
+<body>
+    <header>
+    <h1>BUY TICKETS</h1>
+    <nav class="Navigation">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="tickets.html" id="ticketsLink" >Tickets</a></li>
+        <li><a href="details.html" id="detailsLink">Details</a></li>
+        <li><a href="payment.html" id="paymentLink">Payment</a></li>
+        <li><a href="confirmation.html" id="confirmationLink">confirmation</a></li>
+    </ul>
+</nav>
+</header>
+<br>
+    <br>
+    <br>
+    <div class ="list">
+<h3>Select the number of tickets under relevant groups</h3>
+<ul>
+    <li>Adult - above 18 years</li>
+    <li>Child - 5 to 17 years</li>
+    <li>Infant - below 4 years (entrance free)</li>
+</ul>
+</div>
+<div class = "block">
+<div class="page">
+
+    <form id="form">
+    <h3>DATE</h3>
+    <p>Choose a date:</p>
+    <input type="date" id="dateInput" required>
+
+<div class="guests">
+    <h3>GUESTS</h3>
+   
+   <p>Select the number of tickets</p>
+         
+            <div class="SlAd">
+                <label id="adultTickets">Sri Lankan Adult:</label>
+        <div class="button1">
+        <button id ="deduct1" type = "button">-</button>
+        <input type="number" id="num1" name="number" value="0"  min="0" step="1" readonly required>
+        <button id ="add1" type = "button">+</button>
+            </div>
+            </div>
+            <br>
+            <div class="SlCh">
+                <label id="childTickets">Sri Lankan Child:</label>
+        <div class="button1">
+            <button id ="deduct2" type = "button">-</button>
+            <input type="number" id="num2" name="number" value="0"  min="0" step="1" readonly >
+            <button id ="add2" type = "button">+</button>
+            </div>
+            </div>
+            <br>
+            <div class="FoAd">
+                <label id="FAdultTickets">Foriegner Adult  : </label>
+                <div class="button1">
+                    <button id ="deduct3" type = "button">-</button>
+                    <input type="number" id="num3" name="number" value="0" min="0" step="1" readonly >
+                <button id ="add3" type = "button">+</button>
+             </div>
+            </div>
+            <br>
+            <div class="FoCh">
+                <label id ="FChildTickets">Foriegner Child  : </label>
+                <div class="button1">
+                    <button id ="deduct4" type = "button">-</button>
+                    <input type="number" id="num4" name="number" value="0" min="0" step="1" readonly >
+                    <button id ="add4" type = "button">+</button>   
+            </div>
+            </div>
+            <br>
+        
+            <div class="INF">
+                <label id="Infant">Infant  : </label>
+                <div class="button1">
+                 <button id ="deduct5" type = "button" >-</button>
+                 <input type="number" id="num5" name="number" value="0"  min="0" step="1" readonly >
+                 <button id ="add5" type = "button" >+</button> 
+               </div>
+            </div>
+       </div>
+            <br>
+     
+        
+            <div class="duration">
+                <h3>DURATION  (07.00AM to 06.00PM)</h3>
+                <p>Select a Time Slot</p>
+            
+                <select  id="timeSlots"  name="duration" required>
+                    <option value = "" selected disabled>Choose time here</option>
+                    <option value="timeslot1">07.00am to 08.00am</option>
+                    <option value="timeslot2">08.00am to 09.00am</option>
+                    <option value="timeslot3">09.00am to 10.00am(Peak)</option>
+                    <option value="timeslot4">10.00am to 11.00am(Peak)</option>
+                    <option value="timeslot5">11.00am to 12.00pm(Peak)</option>
+                    <option value="timeslot6">12.00pm to 01.00pm(Peak)</option>
+                    <option value="timeslot7">01.00pm to 02.00pm</option>
+                    <option value="timeslot8">02.00pm to 03.00pm</option>
+                    <option value="tiemslot9">03.00pm to 04.00pm(Peak)</option>
+                    <option value="timeslot10">04.00pm to 05.00pm(Peak)</option>
+                    <option value="timeslot11">05.00pm to 06.00pm(Peak)</option>
+                </select>
+                <br>
+                <br>
+                <button type="button" id="delete">Deselect all</button>
+            </div>
+            <br>
+            <br>
+            <a href="details.html"><button type="button"  id="nxt">Continue with purchase</button></a>
+        
+    </form>
+
+</div>
+<div class="SumTable">
+    <table id="sumTable">
+        <tr><th  colspan="2">summary</th>
+        <tr>
+            <td>Date</td>
+            <td id="displayDate"></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>
+                <div id="Time">
+                    <div id="slot1"></div>
+                    <div id="slot2"></div>
+                    <div id="slot3"></div>
+                    <div id="slot4"></div>
+                    <div id="slot5"></div>
+                    <div id="slot6"></div>
+                    <div id="slot7"></div>
+                    <div id="slot8"></div>
+                    <div id="slot9"></div>
+                    <div id="slot10"></div>
+                    <div id="slot11"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            
+                <td> 
+
+                    <div id="total-hours-value"></div>
+                    <div id="normal-hours-value"></div>
+                    <div id="peak-hours-value"></div>
+                </td>
+        
+        </tr>
+    
+        <tr class="Guestss">
+            <td>Tickets</td>
+            <td>Charges</td>
+        </tr>
+        <tr>
+            <td>SL Adults</td>
+            <td id="SumSlAd"></td>
+        </tr>
+        <tr>
+            <td>SL Children</td>
+            <td id="SumSlCh"></td>
+        </tr>
+        <tr>
+            <td>Foreigner Adults</td>
+            <td id="SumFAd"></td>
+        </tr>
+        <tr>
+            <td>Foreigner Children</td>
+            <td id="SumFCh"></td>
+        </tr>
+        <tr>
+            <td>Infants</td>
+            <td id="SumInfant"></td>
+        </tr>
+        <tr class="totalpay">
+            <td>Total Payable</td>
+            <td id="total"></td>
+        </tr>
+    </table>
+</div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="table-content">
+        <table >
+            <tr id="1stroww">
+                <th colspan="4">CHARGES PER NORMAL HOUR</th>
+                
+                
+            </tr>
+            <tr id="2ndroww">
+                <th>Sri Lankan adult</th>
+                <th>Sri Lankan  child</th>
+                <th>Foriegn adult</th>
+                <th>Foreign child</th>
+               
+            </tr>
+            <tr id="3rdroww">
+                <td> 4 USD </td>
+                <td> 2 USD </td>
+                <td> 10 USD </td>
+                <td> 5 USD </td>
+                
+       
+        </table>
+    <br>
+        <table >
+        <tr id="1strow">
+        <th colspan="4">CHARGES PER PEAK HOUR</th></tr>
+        <tr id="2ndrow">
+            <th>Sri Lankan adult</th>
+            <th>Sri Lankan child</th>
+            <th>Foreign adult</th>
+            <th>Foreign child</th>
+        </tr>
+        <tr id="3rdrow">
+            <td> 6 USD </td>
+            <td> 3 USD </td>
+            <td> 13 USD</td>
+            <td> 8 USD </td>
+        </tr>
+    
+        </table>
+       
+        <p id="para1"><b>Every day from 10.00 am to 1.00 pm and from 3.00 pm to 6.00 pm will be considered as Peak hours</b></P>
+
+    </div>
+    <script src="script/main.js"></script>
+    <script src="script/tickets.js"></script>
+    <footer>
+        <nav class="navfo">
+            <ul>
+                <li><a href="mail-to=cb011845@students.apiit.lk">Contact Us</a></li>
+                <li><a href="https://web.facebook.com/koggalaseaturtle/?_rdc=1&_rdr">facebook</a></li>
+                <li>011-1234567</li>
+            </ul>
+                &copy; turtlyys T&C apply
+            </nav>
+            </footer>
+</body>
+</html>

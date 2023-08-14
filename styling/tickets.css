@@ -1,0 +1,135 @@
+
+
+.page p{
+  font-size: 16px;
+  color: cornflowerblue;
+}
+ul{
+    list-style: circle;
+   
+    text-align:left;
+}
+.table-content table{
+  margin-left: 15%;
+  margin-right: 15%;
+  border: solid#1a1919 2px;
+
+}
+.table-content{
+  margin-left: 15%;
+
+}
+.table-content table tr th{
+    background-color: rgba(246, 148, 200, 0.482);
+    font-weight: bold;
+    border: solid#1a1919 1px;
+  text-align: center;
+  padding: 5px;
+
+}
+.table-content td {
+    text-align: left;
+    padding: 5px;
+    background-color:rgba(189, 186, 189, 0.663);
+    border: solid#1a1919 1px;
+  }
+  .table-content tr th:hover {
+    background-color:ivory; 
+  }
+  .table-content tr td:hover {
+    background-color:lavender;
+  }
+  
+  input[type="date"] {
+    width: 82%;
+    font-size: 15px;
+    color: #9d9999;
+    border: 2px solid #9d9999;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  .button1{
+    height: 40px;
+    width: 80%;
+    display: flex ;
+    align-items: center;
+    background: #FFF;
+    
+  
+    background-color: #fdfdfe;
+    color: rgb(3, 3, 3);
+  }
+.button1 button{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #605c5c;
+  cursor: pointer;
+}
+.button1 input[type="number"]{
+  text-align: center;
+}
+  #timeSlots{
+    width: 85%;
+    font-size: 15px;
+    color: #9d9999;
+    border: 2px solid #9d9999;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    cursor: pointer; 
+  }
+  #para1{
+   text-align: center;
+   padding-right: 21%;
+   font-size: 20px;
+  }
+  .list{
+    text-align: center;
+  }
+  .list ul li{
+    margin-left: 38%;    
+  }
+  .page{
+    margin-left: 10%;
+    width: 500px;
+  }
+  #button2{
+    display: flex;
+    padding-top:10px ;
+    
+    
+  }
+  #button2 button{
+    font-size: 16px;
+    
+  }
+  #button2 h3{
+  
+    text-align: left;
+  }
+  
+  #btn1{
+   margin-right: 20%;
+  }
+  #btn2{
+margin-left: 20%;
+  }
+.Hours{
+  padding-left: 10px;
+}
+.Hours input[type="number"]{
+color: #9d9999; 
+border: 2px solid #9d9999;
+border-radius: 3px;
+padding-left: 10px;
+width: 60%
+}
